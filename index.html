@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Udemy</title>
+    <title>Course Website</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -11,39 +12,81 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
+    <!-- Header -->
     <div class="navbar">
-      <div class="navbar_heading">
-        <h1>Udemy</h1>
+      <div class="logo">
+        <h1 class="brand">Udemy</h1>
       </div>
-      <div class="navbar_search">
-        <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 0, 0)"></i>
-        <input type="text" placeholder="Search..." />
+
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search courses..."
+        />
       </div>
-      <div class="navbar_icons">
-        <a href="https://www.meesho.com/" style="color: black; text-decoration: none;">Courses</a>
-        <i class="fa-solid fa-cart-arrow-down" style="color: rgb(0, 0, 0)"></i>
-        <i class="fa-solid fa-user" style="color: rgb(0, 0, 0)"></i>
+
+      <div class="menu">
+        <button class="button">Courses</button>
+        <button class="button">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        <button class="button"><i class="fa-solid fa-user"></i></button>
       </div>
-    </div>
-    <div class="category">
-      <button>Development</button>
-      <button>Business</button>
-      <button>Software</button>
-      <button>Design</button>  
     </div>
 
-    <div class="hero_image">
-        <img src="./assets/hero_image.jpg" alt="hero_image">
+    <!-- Categories -->
+    <div class="categories">
+      <button class="category">Development</button>
+      <button class="category">Business</button>
+      <button class="category">Software</button>
+      <button class="category">Design</button>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+      <img src="./assets/saleimg.jpg" alt="Sale Banner" />
+    </div>
+
+    <!-- Courses -->
+    <div class="courses">
+      <div class="course">
+        <img class="image" src="./assets/aiml.jpg" alt="AI" />
+        <h3>Intro to AI</h3>
+        <p>Andrew Ng</p>
+        <h4>₹239</h4>
+      </div>
+
+      <div class="course">
+        <img class="image" src="./assets/arduino.jpg" alt="Arduino" />
+        <h3>Arduino Basics</h3>
+        <p>Jeremy Blum</p>
+        <h4>₹549</h4>
+      </div>
+
+      <div class="course">
+        <img class="image" src="./assets/fullstack.jpg" alt="Web" />
+        <h3>Full Stack Web</h3>
+        <p>Angela Yu</p>
+        <h4>₹449</h4>
+      </div>
+
+      <div class="course">
+        <img class="image" src="./assets/gpu.jpg" alt="GPU" />
+        <h3>GPU Computing</h3>
+        <p>NVIDIA</p>
+        <h4>₹669</h4>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>© 2023 Course Website | Privacy | Terms</p>
     </div>
   </body>
 </html>
