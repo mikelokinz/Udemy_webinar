@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.navbar {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+}
+
+.brand {
+  color: purple;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px 15px;
+  width: 40%;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Categories */
+.categories {
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.category {
+  background: #9da2ff;
+  color: white;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.banner img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+/* Courses */
+.courses {
+  height: 45%;
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+
+.course {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  height: 7%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
